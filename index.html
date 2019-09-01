@@ -6,31 +6,158 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 	<body>
-		<div class="form-check">
-    		<input type="checkbox" class="form-check-input" name="btnTodos" id="cbBTodas" checked>
-          	<label class="form-check-label" for="gridRadios1">Todos
- 	 	</div>
+        <!--checkbox para hacerlos desaparecer-->
+	    <div class="form-check">
+    	        <input type="checkbox" class="form-check-input" name="btnTodos" id="cbBTodas">
+                <label class="form-check-label">Todos
+            </div>
+	    <div class="form-check">
+    		<input type="checkbox" class="form-check-input" name="btnBCentral" id="cbBCentral">
+		<label class="form-check-label">Central
+ 	    </div>
 
-		<div class="form-check">
-    		<input type="checkbox" class="form-check-input" name="btnBCentral" id="cbBCentral" checked>
-			<label class="form-check-label" for="gridRadios1">Central
- 	 	</div>
+	    <div class="form-check">
+    		<input type="checkbox" class="form-check-input" name="btnBVasconcelos" id="cbBVasconcelos">
+		<label class="form-check-label">Biblioteca Vasconcelos
+ 	    </div>
 
-		<div class="form-check">
-    		<input type="checkbox" class="form-check-input" name="btnBVasconcelos" id="cbBVasconcelos" checked>
-			<label class="form-check-label" for="gridRadios1">Vasconcelos
- 	 	</div>
+	    <div class="form-check">
+    		<input type="checkbox" class="form-check-input" name="btnBPIngenieria" id="cbBPIngenieria">
+		<label class="form-check-label">Biblioteca Antonio Dovali Jaime (Edificio A, Facultad de Ingenieria)
+ 	    </div>
+            
+        <div class="form-check">
+    		<input type="checkbox" class="form-check-input" name="btnAIngenieria" id="cbBAIngenieria">
+		    <label class="form-check-label">Biblioteca Enrique Rivero Borrell  (Conjunto sur, ciencias basicas Ingenieria)
+ 	    </div>
+            
+        <div class="form-check">
+    		<input type="checkbox" class="form-check-input" name="btnPosIngenieria" id="cbBPosIngenieria">
+		    <label class="form-check-label">Biblioteca Enzo Levi  (Conjunto sur, edificio de posgrado Ingenieria) 
+ 	    </div>
 
+        <div class="form-check">
+    		<input type="checkbox" class="form-check-input" name="btnBNM" id="cbBNM">
+                <label class="form-check-label"> Biblioteca Nacional de México
+ 	    </div>
 
-		<div id="central" class="biblioteca"><libro 1/div>
-		<div id="central" class="biblioteca">libro  2</div>
-		<div id="central" class="biblioteca"> libro 3</div>
-		<h1>bilioteca vasconcelos</h1>
-		<div id="vasconcelos" class="biblioteca">libro a</div>
-		<div id="vasconcelos" class="biblioteca"> libro b </div>
-		<div id="vasconcelos" class="biblioteca"> libro c</div>
-		<div id="vasconcelos" class="biblioteca"> libro d</div>
-		<div id="vasconcelos" class="biblioteca"> libro e</div>
+        <div class="form-check">
+    		<input type="checkbox" class="form-check-input" name="btnQuimica" id="cbBQuimica">
+		    <label class="form-check-label">Facultad de Quimica
+        </div>
+
+        <div class="form-check">
+    		<input type="checkbox" class="form-check-input" name="btnCiencias" id="cbBCiencias">
+		    <label class="form-check-label">Facultad de Ciencias
+        </div>
+            <!--Tabla con los elementos-->
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Editorial</th>
+                        <th scope="col">Temas</th>
+                        <th scope="col">Disponible en</th>
+                        <th scope="col">Clasificación</th>
+                        <th scope="col">Imagen</th>
+
+                    </tr>
+                </thead>
+                 <tbody>
+                        <tr class="Biblioteca BVasconcelos BCentral PIngenieria">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">Matemática Discreta y sus aplicaciones</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+
+                        <tr class="Biblioteca BVasconcelos">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">vas</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+
+                        <tr class="Biblioteca BCentral">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">central</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+                    
+                        <tr class="Biblioteca PIngenieria">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">principal</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+
+                        <tr class="Biblioteca AIngenieria">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">anexo</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+
+                        <tr class="Biblioteca PosIngenieria">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">posgrado</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+
+                        <tr class="Biblioteca BNM">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">nacional</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+
+                        <tr class="Biblioteca Quimica">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">quimica</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+
+                        <tr class="Biblioteca Ciencias">  
+                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td class="align-middle">ciencias</td>
+                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
+                        </tr>
+                    </div>
+
+                </tbody>
+            </table>
+
 	</body>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/bibliotecas.js"></script>

@@ -7,7 +7,44 @@
 </head>
 	<body>
         <!--checkbox para hacerlos desaparecer-->
-	    <div class="form-check">
+	    <input class="form-control" type="text" id="barra_busqueda" placeholder="Buscar...">
+		
+	<div class="form-check">
+  		<input class="form-check-input buscarPor" type="radio" name="buscarPor" id="buscarPorTitulo" value="option1">
+  		<label class="form-check-label" for="buscarPor1">
+   		 	Titulo
+  		</label>
+	</div>
+
+	 <div class="form-check">
+  		<input class="form-check-input buscarPor" type="radio" name="buscarPor" id="buscarPorAutor" value="option1">
+  		<label class="form-check-label" for="buscarPor1">
+   		 	Autor
+  		</label>
+	</div>
+
+	<div class="form-check">
+  		<input class="form-check-input buscarPor" type="radio" name="buscarPor" id="buscarPorEditorial" value="option1">
+  		<label class="form-check-label" for="buscarPor1">
+   		 	Titulo
+  		</label>
+	</div>
+
+	<div class="form-check">
+  		<input class="form-check-input buscarPor" type="radio" name="buscarPor" id="buscarPorTemas" value="option1">
+  		<label class="form-check-label" for="buscarPor1">
+   		 	Titulo
+  		</label>
+	</div>
+
+	<div class="form-check">
+  		<input class="form-check-input buscarPor" type="radio" name="buscarPor" id="buscarPorBiblioteca" value="option1">
+  		<label class="form-check-label" for="buscarPor1">
+   		 	Autor
+  		</label>
+	</div>
+
+		<div class="form-check">
     	        <input type="checkbox" class="form-check-input" name="btnTodos" id="cbBTodas">
                 <label class="form-check-label">Todos
             </div>
@@ -27,31 +64,31 @@
  	    </div>
             
         <div class="form-check">
-    		<input type="checkbox" class="form-check-input" name="btnAIngenieria" id="cbBAIngenieria">
+    		<input type="checkbox" class="form-check-input" name="btnBAIngenieria" id="cbBAIngenieria">
 		    <label class="form-check-label">Biblioteca Enrique Rivero Borrell  (Conjunto sur, ciencias basicas Ingenieria)
  	    </div>
             
         <div class="form-check">
-    		<input type="checkbox" class="form-check-input" name="btnPosIngenieria" id="cbBPosIngenieria">
+    		<input type="checkbox" class="form-check-input" name="btnBPosIngenieria" id="cbBPosIngenieria">
 		    <label class="form-check-label">Biblioteca Enzo Levi  (Conjunto sur, edificio de posgrado Ingenieria) 
  	    </div>
 
         <div class="form-check">
-    		<input type="checkbox" class="form-check-input" name="btnBNM" id="cbBNM">
+    		<input type="checkbox" class="form-check-input" name="btnBNM" id="cbBBNM">
                 <label class="form-check-label"> Biblioteca Nacional de México
  	    </div>
 
         <div class="form-check">
-    		<input type="checkbox" class="form-check-input" name="btnQuimica" id="cbBQuimica">
+    		<input type="checkbox" class="form-check-input" name="btnBQuimica" id="cbBQuimica">
 		    <label class="form-check-label">Facultad de Quimica
         </div>
 
         <div class="form-check">
-    		<input type="checkbox" class="form-check-input" name="btnCiencias" id="cbBCiencias">
+    		<input type="checkbox" class="form-check-input" name="btnBCiencias" id="cbBCiencias">
 		    <label class="form-check-label">Facultad de Ciencias
         </div>
             <!--Tabla con los elementos-->
-            <table class="table table-striped">
+            <table class="table table-striped tabla_libros">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Autor</th>
@@ -65,10 +102,10 @@
                     </tr>
                 </thead>
                  <tbody>
-                        <tr class="Biblioteca BVasconcelos BCentral PIngenieria">  
+                        <tr class="Biblioteca BVasconcelos BCentral BPIngenieria">  
                             <td scope="row" class="align-middle">Roden, Kenneth H.</td>
                             <td class="align-middle">Matemática Discreta y sus aplicaciones</td>
-                            <td class="align-middle">McGrawHill</td>
+                            <td class="align-middle">Trillas</td>
                             <td class="align-middle">2,3,4</td>
                             <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
                             <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
@@ -76,7 +113,7 @@
                     </div>
 
                         <tr class="Biblioteca BVasconcelos">  
-                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                            <td scope="row" class="align-middle">Mario  H.</td>
                             <td class="align-middle">vas</td>
                             <td class="align-middle">McGrawHill</td>
                             <td class="align-middle">2,3,4</td>
@@ -86,7 +123,7 @@
                     </div>
 
                         <tr class="Biblioteca BCentral">  
-                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+							<td scope="row" class="align-middle">Alex.</td>
                             <td class="align-middle">central</td>
                             <td class="align-middle">McGrawHill</td>
                             <td class="align-middle">2,3,4</td>
@@ -95,17 +132,17 @@
                         </tr>
                     </div>
                     
-                        <tr class="Biblioteca PIngenieria">  
-                            <td scope="row" class="align-middle">Roden, Kenneth H.</td>
+                        <tr class="Biblioteca BPIngenieria">  
+                            <td scope="row" class="align-middle"> Kenny</td>
                             <td class="align-middle">principal</td>
                             <td class="align-middle">McGrawHill</td>
-                            <td class="align-middle">2,3,4</td>
+                            <td class="align-middle">5</td>
                             <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
                             <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
                         </tr>
                     </div>
 
-                        <tr class="Biblioteca AIngenieria">  
+                        <tr class="Biblioteca BAIngenieria">  
                             <td scope="row" class="align-middle">Roden, Kenneth H.</td>
                             <td class="align-middle">anexo</td>
                             <td class="align-middle">McGrawHill</td>
@@ -115,7 +152,7 @@
                         </tr>
                     </div>
 
-                        <tr class="Biblioteca PosIngenieria">  
+                        <tr class="Biblioteca BPosIngenieria">  
                             <td scope="row" class="align-middle">Roden, Kenneth H.</td>
                             <td class="align-middle">posgrado</td>
                             <td class="align-middle">McGrawHill</td>
@@ -125,7 +162,7 @@
                         </tr>
                     </div>
 
-                        <tr class="Biblioteca BNM">  
+                        <tr class="Biblioteca BBNM">  
                             <td scope="row" class="align-middle">Roden, Kenneth H.</td>
                             <td class="align-middle">nacional</td>
                             <td class="align-middle">McGrawHill</td>
@@ -135,7 +172,7 @@
                         </tr>
                     </div>
 
-                        <tr class="Biblioteca Quimica">  
+                        <tr class="Biblioteca BQuimica">  
                             <td scope="row" class="align-middle">Roden, Kenneth H.</td>
                             <td class="align-middle">quimica</td>
                             <td class="align-middle">McGrawHill</td>
@@ -145,12 +182,12 @@
                         </tr>
                     </div>
 
-                        <tr class="Biblioteca Ciencias">  
+                        <tr class="Biblioteca BCiencias">  
                             <td scope="row" class="align-middle">Roden, Kenneth H.</td>
                             <td class="align-middle">ciencias</td>
                             <td class="align-middle">McGrawHill</td>
                             <td class="align-middle">2,3,4</td>
-                            <td class="align-middle">1.-B. Vasconcelos <br>2.-B. Central <br> 3.-Fac. Ingenieria</td>
+                            <td class="align-middle">3.-Fac. Filosofia</td>
                             <td class="align-middle">1.-511.3R67 2003 <br> 2.-una Clasificación <br> 3.-una mas</td>
                         </tr>
                     </div>
